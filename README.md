@@ -80,4 +80,4 @@ Given type shall be send in the body is as follow :
 }
 ```
 ## Extra explanations 
-In order to add title as a parameter of tokenRequest I changed **MyResourceOwnerPasswordTokenGranter ** class and mainly changed the  **AuthorizationServerConfig** class and added a **tokenEnhancer** class to increase the accessToken and refreshToken length. If you need more details about what I've done, I will be ready to have a discussion.
+In order to add title as a parameter of tokenRequest I changed **MyResourceOwnerPasswordTokenGranter** class and mainly changed the  **AuthorizationServerConfig** class and added a **tokenEnhancer** class to increase the accessToken and refreshToken length. If you need more details about what I've done, I will be ready to have a discussion.
