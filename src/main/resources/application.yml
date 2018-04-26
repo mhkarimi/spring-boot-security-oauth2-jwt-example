@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb2
+    username: postgres
+    password:
+    data: "classpath*:scripts.sql"
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+phonePay.security.oauth:
+  tokenExpirationTime: 3600
+  refreshTokenExpTime: 21600
+  clientId: "phonePayClient"
+  clientSecret: "phonePaySecret"
+  grantTypePassword: "password"
+  authorizationCode: "authorization_code"
+  implicit: "implicit"
+  scopeRead: "read"
+  scopeWrite: "write"
+  trust: "trust"
+phonePay:
+  security:
+    oauth:
+      token-signing-key: "as466gf"
+      refresh-token: "refresh_token"
+
