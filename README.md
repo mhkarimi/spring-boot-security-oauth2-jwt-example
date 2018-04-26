@@ -42,7 +42,7 @@ example  (based on our database and configurations):
 ```
 curl -X POST \
   http://localhost:8080/oauth/token \
-  -H "Authorization: Basic `echo -n phonePayClient:phonePaySecret | base64`" \
+  -H "Authorization: Basic `echo -n oauthClient:oauthSecret | base64`" \
   -H 'Cache-Control: no-cache' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -d 'username=mh1&title=hasan&grant_type=password' | jq .
@@ -52,7 +52,7 @@ curl -X POST \
 ```
 curl -X GET \
   'http://localhost:8080/users/user?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzb3VyY2VfaWQiXSwidXNlcl9uYW1lIjoibWgxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIiwidHJ1c3QiXSwiZXhwIjoxNTIyNzM2OTg0LCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImp0aSI6IjY4ZTFmZjBjLWUwM2EtNDJkMy1hYjdlLTg5NTA5OWYzOTk1ZCIsImNsaWVudF9pZCI6InBob25lUGF5Q2xpZW50In0.YSNdzBM_FjvutGhMhht9J7VoPbuIhEd8N78t0KrxgAE' \
-  -H "Authorization: Basic `echo -n phonePayClient:phonePaySecret | base64`" \
+  -H "Authorization: Basic `echo -n oauthClient:oauthSecret | base64`" \
   -H 'Cache-Control: no-cache' \
   -H 'Content-Type: application/json'  | jq .
 ```
@@ -62,7 +62,7 @@ curl -X GET \
 ```
 curl -X PUT \
   'http://localhost:8080/users/user?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicmVzb3VyY2VfaWQiXSwidXNlcl9uYW1lIjoibWgxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIiwidHJ1c3QiXSwiZXhwIjoxNTIyNzM2OTg0LCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImp0aSI6IjY4ZTFmZjBjLWUwM2EtNDJkMy1hYjdlLTg5NTA5OWYzOTk1ZCIsImNsaWVudF9pZCI6InBob25lUGF5Q2xpZW50In0.YSNdzBM_FjvutGhMhht9J7VoPbuIhEd8N78t0KrxgAE' \
-  -H "Authorization: Basic `echo -n phonePayClient:phonePaySecret | base64`" \
+  -H "Authorization: Basic `echo -n oauthClient:oauthSecret | base64`" \
   -H 'Cache-Control: no-cache' \
   -H 'Content-Type: application/json' \
   -d ' {
