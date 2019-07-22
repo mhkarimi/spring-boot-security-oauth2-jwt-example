@@ -1,4 +1,4 @@
-This is a project to show how to Spring Security Oauth2 works. Instead of username and password
+This is a project to show how to Spring Security Oauth2 works. Instead of username and password, 
 username and title have been used. For the persistence of the tokens, I uses **RedisTokenStore** and also **JWT** to implement the given APIs. I also configured log4j2.xml file to format the output.
 
 ## Here are listed classes I've created/changed 
